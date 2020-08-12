@@ -8,11 +8,3 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: monitoring
----
-namespace: app
-resources:
-  - app.yaml
----
-namespace: monitoring
-resources:
-  - monitoring.yaml
