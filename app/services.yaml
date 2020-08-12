@@ -11,3 +11,16 @@ spec:
       port: 5000
       targetPort: 5000
   type: LoadBalancer
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: kube-state-metrics
+spec:
+  selector:
+    app: kube-state-metrics
+  type: LoadBalancer
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080
