@@ -2,7 +2,7 @@ FROM python:alpine
 
 WORKDIR /home/Hackerank_basic_api
 
-COPY . .
+COPY ./Pyapp .
 
 RUN pip install -r requirements.txt
 

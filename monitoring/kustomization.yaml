@@ -1,0 +1,6 @@
+namespace: monitoring
+resources:
+  - clusterrole.yaml
+  - deployment.yaml
+  - services.yaml
+  - prometheus.yml
