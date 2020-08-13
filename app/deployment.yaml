@@ -19,25 +19,3 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 5000
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: kube-state-metrics
-spec:
-  selector:
-    matchLabels:
-      app: kube-state-metrics
-  replicas: 1
-  template:
-    metadata:
-      labels:
-        app: kube-state-metrics
-    spec:
-      serviceAccountName: prometheus
-      containers:
-      - name: kube-state-metrics
-        image: quay.io/coreos/kube-state-metrics:v1.2.0
-        ports:
-        - containerPort: 8080
-          name: monitoring

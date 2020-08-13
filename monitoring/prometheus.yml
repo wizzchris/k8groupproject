@@ -58,6 +58,6 @@ data:
     - job_name: 'traefik'
       static_configs:
       - targets: ['app:5000']
-kind: ConfigMap
+  kind: ConfigMap
 metadata:
   name: prometheus-config

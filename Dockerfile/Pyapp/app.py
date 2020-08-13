@@ -2,6 +2,7 @@ from flask import Flask, jsonify
 
 from src.hackerank_news_data_factory import HackerRankDataFactory as HackerRankDataFactory
 
+
 app = Flask(__name__)
 
 
