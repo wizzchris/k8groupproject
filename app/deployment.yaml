@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: codebreaker
+          image: chrisrogers97/projectapp:codebreaker
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 5000
