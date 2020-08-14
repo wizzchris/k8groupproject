@@ -24,4 +24,4 @@ urllib3==1.25.9
 wcwidth==0.1.9
 Werkzeug==1.0.1
 zipp==3.1.0
-prometheus_flask_exporter==0.15.4
+prometheus-flask-exporter
