@@ -2,3 +2,5 @@ resources:
   - namespaces.yaml
   - app
   - monitoring
+  - Traefik
+  - ingress.yaml

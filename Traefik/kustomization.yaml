@@ -1,0 +1,6 @@
+namespace: traefik
+resources:
+  - clusterrole.yaml
+  - deamonset.yaml
+  - services.yaml
+  - ingress.yaml

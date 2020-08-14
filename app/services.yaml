@@ -4,11 +4,11 @@ kind: Service
 metadata:
   name: app
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: web
   ports:
     - name: web
       protocol: TCP
-      port: 5000
+      port: 80
       targetPort: 5000

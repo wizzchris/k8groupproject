@@ -4,4 +4,4 @@ resources:
   - deployment.yaml
   - services.yaml
   - prometheus.yml
-  - ingress.yaml
+  - perssistantvolume.yaml
