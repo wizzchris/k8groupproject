@@ -8,23 +8,18 @@ metadata:
     traefik.frontend.rule.type: PathPrefixStrip
 spec:
   rules:
-  - host: prom.minikube
-    http:
+  - http:
       paths:
       - path: /prometheus
         pathType: Prefix
         backend:
-          serviceName: prometheus.monitoring
-          servicePort: http
+          serviceName: prometheus
+          servicePort: 8080
 
+  - http:
+      paths:
       - path: /grafana
         pathType: Prefix
         backend:
-          serviceName: grafana.monitoring
-          servicePort: http
-
-      - path: /app
-        pathType: Prefix
-        backend:
-          serviceName: app.app
-          servicePort: http
+          serviceName: grafana
+          servicePort: 8080

@@ -2,3 +2,4 @@ namespace: app
 resources:
   - services.yaml
   - deployment.yaml
+  - ingress.yaml

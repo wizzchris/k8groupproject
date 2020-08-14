@@ -3,4 +3,3 @@ resources:
   - app
   - monitoring
   - Traefik
-  - ingress.yaml
