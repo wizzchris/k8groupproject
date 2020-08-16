@@ -38,3 +38,10 @@ spec:
         - --api
         - --kubernetes
         - --logLevel=INFO
+        volumeMounts:
+        - name: traefik-config-volume
+          mountPath: /etc/traefik/
+      volumes:
+      - name: traefik-config-volume
+        configMap:
+          name: traefik-config

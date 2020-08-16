@@ -4,3 +4,4 @@ resources:
   - deamonset.yaml
   - services.yaml
   - ingress.yaml
+  - traefik.yaml

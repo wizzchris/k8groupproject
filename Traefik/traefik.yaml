@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: traefik-config
+data:
+  traefik.yaml: |
+    metrics:
+      prometheus: {}
+        addServicesLabels: true
+        entryPoint: metrics
+
+    entryPoints:
+      metrics:
+        address: ":8082"

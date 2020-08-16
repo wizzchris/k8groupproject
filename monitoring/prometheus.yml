@@ -14,4 +14,7 @@ data:
           - targets: ['localhost:9090']
       - job_name: 'python'
         static_configs:
-          - targets: ['app.app:5000']
+          - targets: ['app.app:8080']
+      - job_name: 'traefik'
+        static_configs:
+          - targets: ['traefik-web-ui.traefik:8082']
