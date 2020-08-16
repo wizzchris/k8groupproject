@@ -3,7 +3,7 @@ apiVersion: v1
 metadata:
   name: traefik-ingress-service
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     k8s-app: traefik-ingress-lb
   ports:
@@ -27,9 +27,3 @@ spec:
   - name: web
     port: 80
     targetPort: 8080
-  - name: prom
-    port: 34610
-    targetPort: 34610
-  - name: graf
-    port: 34620
-    targetPort: 34620

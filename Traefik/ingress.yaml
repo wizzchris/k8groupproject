@@ -12,11 +12,3 @@ spec:
         backend:
           serviceName: traefik-web-ui
           servicePort: web
-      - path: /
-        backend:
-          serviceName: traefik-web-ui
-          servicePort: prom
-      - path: /
-        backend:
-          serviceName: traefik-web-ui
-          servicePort: graf
