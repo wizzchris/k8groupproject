@@ -28,6 +28,8 @@ spec:
         - name: admin
           containerPort: 8080
           hostPort: 8080
+        - name: prom
+          containerPort: 8082
         securityContext:
           capabilities:
             drop:
