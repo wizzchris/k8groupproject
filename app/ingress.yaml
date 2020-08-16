@@ -8,7 +8,8 @@ metadata:
     traefik.frontend.rule.type: PathPrefixStrip
 spec:
   rules:
-  - http:
+  - host: app.minikube
+    http:
       paths:
       - path: /app
         pathType: Prefix

@@ -72,7 +72,6 @@ spec:
         name: grafana
         ports:
         - containerPort: 3000
-          name: http
 
         volumeMounts:
           - name: grafana-storage
