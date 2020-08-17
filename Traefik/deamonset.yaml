@@ -26,8 +26,6 @@ spec:
           containerPort: 80
         - name: admin
           containerPort: 8080
-        - name: prom
-          containerPort: 8082
         securityContext:
           capabilities:
             drop:
@@ -38,10 +36,4 @@ spec:
         - --api
         - --kubernetes
         - --logLevel=INFO
-        volumeMounts:
-        - name: traefik-config-volume
-          mountPath: /etc/traefik/
-      volumes:
-      - name: traefik-config-volume
-        configMap:
-          name: traefik-config
+        - --web.metrics.prometheus=TRUE

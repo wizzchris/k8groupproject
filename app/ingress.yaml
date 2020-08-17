@@ -15,4 +15,4 @@ spec:
         pathType: Prefix
         backend:
           serviceName: app
-          servicePort: 8080
+          servicePort: 80
