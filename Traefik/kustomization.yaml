@@ -2,7 +2,8 @@
 namespace: traefik
 resources:
   - clusterrole.yaml
-  - deamonset.yaml
+  - deployment.yaml
   - services.yaml
   - ingress.yaml
   - traefik.yaml
+  - crd.yaml

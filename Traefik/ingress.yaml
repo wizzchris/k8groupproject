@@ -10,9 +10,13 @@ spec:
       paths:
       - path: /
         backend:
-          serviceName: traefik-web-ui
+          serviceName: traefik
           servicePort: web
       - path: /
         backend:
-          serviceName: traefik-web-ui
-          servicePort: prom
+          serviceName: traefik
+          servicePort: admin
+      - path: /
+        backend:
+          serviceName: traefik
+          servicePort: websecure

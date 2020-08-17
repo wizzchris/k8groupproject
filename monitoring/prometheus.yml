@@ -17,4 +17,4 @@ data:
           - targets: ['app.app:80']
       - job_name: 'traefik'
         static_configs:
-          - targets: ['traefik-web-ui.traefik:8080']
+          - targets: ['traefik.traefik:8082']
