@@ -61,5 +61,5 @@ subjects:
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  namespace: default
   name: traefik-ingress-controller
+  namespace: traefik
